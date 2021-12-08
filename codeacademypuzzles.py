@@ -187,17 +187,17 @@ The number of asterisks you put should correspond to
 the number of letters in the censored word."""
 
 def censor(text, word):
-  words = text.split(" ")
-  stars = len(word) * "*"
-  answer = ""
-  print(stars)
-  for part in words:
-    if part == word:
-      words.append(stars)
-    else:
-      words.append(part)
-  print(words)
-  return(words)
+    words = text.split()
+    result = ''
+    stars = '*' * len(word)
+    count = 0
+    for i in words:
+        if i == word:
+            words[count] = stars
+        count += 1
+    result =' '.join(words)
 
-censor("Yo what the hey", "hey")
+    return result
+  
+print censor("what the hey, hey", "hey")
 
