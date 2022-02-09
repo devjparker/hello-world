@@ -7,14 +7,14 @@ public class MyClass {
     }
 }
 
-//Program that says hello with inserted name. Will need to test on own computer bc it's acting silly with online compiler.
+//Program that says hello with inserted name. Tested on home computer, it works just fine.
 import javax.swing.JOptionPane;
 public class MyClass {
     public static void main(String args[]) {
-      String intro = "What is your name?";
-      String name = JOptionPane.showInputDialog(hello);
-      name = name.toUpperCase();
-      String hello = "Hello" + name + "It's nice to meet you.";
-      JOptionPane.showMessageDialog(hello);
+		String intro = "What is your name?";
+	    String name = JOptionPane.showInputDialog(intro);
+	    name = name.toUpperCase();
+	    String hello = "Hello " + name + " It's nice to meet you.";
+	    JOptionPane.showConfirmDialog(null, hello, hello, JOptionPane.YES_NO_OPTION);
     }
 }
