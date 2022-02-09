@@ -11,10 +11,10 @@ public class MyClass {
 import javax.swing.JOptionPane;
 public class MyClass {
     public static void main(String args[]) {
-		String intro = "What is your name?";
-	    String name = JOptionPane.showInputDialog(intro);
-	    name = name.toUpperCase();
-	    String hello = "Hello " + name + " It's nice to meet you.";
-	    JOptionPane.showConfirmDialog(null, hello, hello, JOptionPane.YES_NO_OPTION);
+	String intro = "What is your name?";
+	String name = JOptionPane.showInputDialog(intro);
+	name = name.toUpperCase();
+	String hello = "Hello " + name + " It's nice to meet you.";
+	JOptionPane.showConfirmDialog(null, hello, hello, JOptionPane.YES_NO_OPTION);
     }
 }
